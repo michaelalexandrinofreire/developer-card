@@ -12,7 +12,7 @@ export default function Instructions() {
       <button onClick={toggleInstructions} className='buttonInstru'>Como usar?</button>
       {showInstructions && (
         <div className='textInst'>
-          <p>Copie o link da API do Github e adicione seu user.</p>
+          <p>Copie e cole o link da API do Github e adicione seu user.</p>
           <p>ex: https://api.github.com/users/seuUser</p>
         </div>
       )}
