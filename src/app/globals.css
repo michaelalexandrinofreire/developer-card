@@ -28,8 +28,6 @@ main{
 
   width: min-content;
   word-wrap: break-word;
-
-  height: 100vh;
 }
 .card{
   padding: 10px 25px;
@@ -93,6 +91,8 @@ h2{
 
   background-size: 100%;
   padding-bottom: 8px;
+
+  height: 100vh;
 }
 .searchProfile h1{
   margin: 64px 0 24px;
