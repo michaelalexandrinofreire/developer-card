@@ -28,6 +28,8 @@ main{
 
   width: min-content;
   word-wrap: break-word;
+
+  height: 100vh;
 }
 .card{
   padding: 10px 25px;
