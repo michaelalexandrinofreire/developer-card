@@ -27,7 +27,7 @@ export default function Home() {
   };
     return (
       <main className='searchProfile'>
-        <h1>Meu Card do GitHub</h1>
+        <h1>Crie seu ProfileHub</h1>
   
         <input 
         placeholder='digite seu url do github api...'

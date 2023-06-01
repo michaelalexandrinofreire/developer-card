@@ -90,15 +90,14 @@ h2{
   flex-direction: column;
 
   background-size: 100%;
-  padding-bottom: 8px;
 
   height: 100vh;
 }
 .searchProfile h1{
-  margin: 64px 0 24px;
+  margin: 74px 0 54px;
 
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   color: #e6edf3;
 }
 .containerBox{
@@ -185,19 +184,47 @@ h2{
 header{
   background-color: #1a1f26;
   color: #e6edf3;
+
   display: flex;
-  padding: 14px;
   justify-content: space-around;
+
   width: 100%;
+  padding: 10px 0px;
 
 }
 .header-link{
-  color: #f0f6fc;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 5px;
 }
+.link-git{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.link-git a{
+  border: 1px solid #30363d;
+  background-color: #151a20;
+  padding: 5px;
+  border-radius: 8px;
 
+  font-size: 14px;
+  line-height: 1.5;
+
+  width: 120px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  transition: all .5s;
+}
+.link-git a:hover{
+  background: #212a3a;
+}
 footer{
   color: #7d8590;
   background-color: #010409;
@@ -229,7 +256,11 @@ footer h2{
   padding-top: 10px;
   color: #7d8590;
 }
-
+.iconNavbar{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
 .instruContainer{
   display: flex;
   flex-direction: column;
@@ -241,7 +272,7 @@ footer h2{
 }
 .instruContainer button{
   padding: 5px;
-  width: 200px;
+  width: 12%;
 }
 .textInst{
   width: 325px;
@@ -252,4 +283,14 @@ footer h2{
   border-radius: 10px;
 
   background-color: #161b22;
+}
+
+@media (max-width: 543px){
+  .searchProfile input, .searchProfile button{
+    width: 80%;
+  }
+  .instruContainer button{
+    padding: 5px;
+    width: 40%;
+  }
 }
