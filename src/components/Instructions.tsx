@@ -9,11 +9,11 @@ export default function Instructions() {
 
   return (
     <div className='instruContainer'>
-      <button onClick={toggleInstructions} className='buttonInstru'>Como usar?</button>
+      <button onClick={toggleInstructions} className='buttonInstru'>How to use?</button>
       {showInstructions && (
         <div className='textInst'>
-          <p>Copie e cole o link da API do Github e adicione seu user.</p>
-          <p>ex: https://api.github.com/users/seuUser</p>
+          <p>Copy and paste the GitHub API link and add your username.</p>
+          <p>https://api.github.com/users/yourUser</p>
         </div>
       )}
     </div>

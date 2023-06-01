@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" title='Card Github'/>
-        <title>Card Github</title>
+        <title>ProfileHub</title>
       </head>
       <body className={inter.className}>
         <NavBar/>

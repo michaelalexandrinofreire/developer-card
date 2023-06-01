@@ -27,17 +27,17 @@ export default function Home() {
   };
     return (
       <main className='searchProfile'>
-        <h1>Crie seu ProfileHub</h1>
+        <h1>Create your ProfileHub</h1>
   
         <input 
-        placeholder='digite seu url do github api...'
+        placeholder='Enter your GitHub API URL...'
         type="text" 
         value={url} 
         onChange={handleInputChange} />
   
         <button 
         type='button'
-        onClick={handleButtonClick}>Gerar Card</button>
+        onClick={handleButtonClick}>Generate Card</button>
         
         <Instructions/>
         
