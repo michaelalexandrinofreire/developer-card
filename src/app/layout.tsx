@@ -13,7 +13,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br"
     title='Card Github'>
-      
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <NavBar/>
         {children}

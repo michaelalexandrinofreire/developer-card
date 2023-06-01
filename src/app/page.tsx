@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import styles from './page.module.css'
 import Instructions from '@/components/Instructions';
 import Card from '@/components/Card';
 
@@ -27,7 +26,6 @@ export default function Home() {
     fetchProfileData();
   };
     return (
-      
       <main className='searchProfile'>
         <h1>Meu Card do GitHub</h1>
   
