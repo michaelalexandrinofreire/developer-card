@@ -27,7 +27,7 @@ export default function Home() {
   };
     return (
       <main className='searchProfile'>
-        <h1>Create your ProfileHub</h1>
+        <h1>Create Your ProfileHub</h1>
   
         <input 
         placeholder='Enter your GitHub API URL...'
