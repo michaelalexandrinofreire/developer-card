@@ -1,9 +1,5 @@
-import NavBar from '@/components/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -14,12 +10,13 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" title='Card Github'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet"/>
         <title>ProfileHub</title>
       </head>
-      <body className={inter.className}>
-        <NavBar/>
+      <body className={'font-Archivo text-white'}>
         {children}
-        <Footer/>
       </body>
       
     </html>
