@@ -1,9 +1,9 @@
 "use client"
 import { useState } from 'react';
-import Instructions from '@/components/Instructions';
 import Card from '@/components/Card';
 
 export default function Home() {
+
   const [username, setUsername] = useState<string>('');
   const [user, setUser] = useState<any>(null);
 
@@ -18,17 +18,17 @@ export default function Home() {
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+  function handleInputChange(e: React.ChangeEvent<HTMLInputElement>){
     setUsername(e.target.value);
   };
 
-  const handleButtonClick = (): void => {
+  function handleButtonClick (){
     fetchProfileData();
   };
 
   return (
     <main className='searchProfile'>
-      <h1>Create Your ProfileHub</h1>
+      <h1>Crie seu ProfileHub</h1>
 
       <input
         placeholder='Enter your GitHub username...'
@@ -41,10 +41,8 @@ export default function Home() {
         type='button'
         onClick={handleButtonClick}
       >
-        Generate Card
+        Gerar Card
       </button>
-
-      <Instructions />
 
       {user && <Card user={user} />}
     </main>

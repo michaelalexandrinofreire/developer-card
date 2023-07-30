@@ -1,7 +1,7 @@
 export default function NavBar(){
  return(
   <header>
-   <a href="https://cardgithubapi.vercel.app/" title="Card do Github">
+   <a href="/" title="Card do Github">
     <img src="/favicon.ico" alt="" className="iconNavbar"/>
    </a>
    <div className="link-git">
