@@ -1,4 +1,3 @@
-import CardExemplo from "@/components/CardExemplo";
 
 
 export default function Home() {
@@ -30,11 +29,13 @@ export default function Home() {
         alt="" 
         className="w-20 rounded-3xl"/>
       </a>
-      <div className="absolute">
-        <CardExemplo/>
-        <CardExemplo/>
-        <CardExemplo/>
-      </div>
+      <a href="/card"
+      className="absolute top-1/2 right-1/2 flex justify-center items-center 
+      bg-white text-pink rounded-xl py-2 px-4 font-medium">
+        <button className="/card">
+          Gerar meu Card
+        </button>
+      </a>
 
     </main>
   );

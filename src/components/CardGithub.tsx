@@ -13,7 +13,7 @@ interface CardProps {
   };
 }
 
-const Card: React.FC<CardProps> = ({ user }) => {
+export default function CardCustom({ user }: CardProps){
   return (
     <div className="container">
       <div className="card">
@@ -86,4 +86,3 @@ const Card: React.FC<CardProps> = ({ user }) => {
     </div>
   );
 }
-export default Card;
