@@ -36,7 +36,7 @@ export default function SideBar(){
   return(
     
     <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around gap-5 
-    text-xs font-medium bg-slate-400 min-h-screen overflow-auto pt-14">
+    text-xs font-medium bg-purple min-h-screen overflow-auto">
         <div className="h-12 flex flex-col justify-center gap-2">
           <h2>Nome:</h2>
           <div className="flex items-center">
@@ -48,7 +48,7 @@ export default function SideBar(){
             </button>
           </div>
         </div>
-        <div className="h-12 flex flex-col justify-center gap-2">
+        <div className="flex flex-col justify-center gap-2">
           <h2>Profição:</h2>
           <div className="flex items-center">
             <input type="text" 
@@ -59,7 +59,7 @@ export default function SideBar(){
             </button>
           </div>
         </div>
-        <div className="h-12 flex flex-col justify-center gap-2">
+        <div className="flex flex-col justify-center gap-2">
           <h2>E-mail:</h2>
           <div className="flex items-center">
             <input type="text" 
@@ -70,7 +70,7 @@ export default function SideBar(){
             </button>
           </div>
         </div>
-      <div className="h-20 flex flex-col justify-center gap-2">
+      <div className="flex flex-col justify-center gap-2">
         <h2>
           Background:
         </h2>
@@ -86,20 +86,20 @@ export default function SideBar(){
         <h2>
           Avatar:
         </h2>
-        <div className="flex flex-wrap gap-2 items-center">
-          <button className="w-16 h-16">
+        <div className="flex flex-wrap gap-6 items-center ">
+          <button className="w-16 h-16 hover:bg-white/20 rounded-lg transition-all duration-300">
             <img 
             src="/whitemenprofile.png" 
             alt="" 
             className="w-full h-full"/>
           </button>
-          <button className="w-16 h-16">
+          <button className="w-16 h-16 hover:bg-white/20 rounded-lg transition-all duration-300">
             <img 
             src="/blackmenprofile.png" 
             alt="" 
             className="object-fill"/>
           </button>
-          <button className="w-16 h-16">
+          <button className="w-16 h-16 hover:bg-white/20 rounded-lg transition-all duration-300">
             <img 
             src="/girlprofile.png" 
             alt="" />
@@ -108,7 +108,7 @@ export default function SideBar(){
       </div>
         <div className=" flex flex-col justify-center gap-2">
           <h2>Tecnologias:</h2>
-          <div className="flex flex-wrap items-center gap-2 w-[18vw]">
+          <div className="flex flex-wrap items-center gap-2 w-[20vw]">
             <Tecnologia text={"AWS"} bg="bg-yellow"/>
             <Tecnologia text="Angular" bg="bg-red"/>
             <Tecnologia text="C++" bg="bg-green"/>
