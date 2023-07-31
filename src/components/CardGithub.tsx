@@ -13,7 +13,7 @@ interface CardProps {
   };
 }
 
-export default function CardCustom({ user }: CardProps){
+export default function CardGithub({ user }: CardProps){
   return (
     <div className="container">
       <div className="card">

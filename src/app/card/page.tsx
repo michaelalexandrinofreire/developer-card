@@ -1,5 +1,6 @@
 "use client"
 
+import CardCustom from "@/components/CardCustom";
 import SideBar from "@/components/SideBar"
 export default function CardPage(){
 
@@ -9,8 +10,8 @@ export default function CardPage(){
       <div>
         <SideBar/>
       </div>
-      <div className="">
-        abcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      <div className="flex justify-center items-center flex-1">
+        <CardCustom/>
       </div>
     </div>
   );
