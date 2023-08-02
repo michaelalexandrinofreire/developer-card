@@ -3,10 +3,10 @@ import React, { useState } from "react";
 
 interface SideBarProps {
   onNameChange: (name: string) => void;
-  onProfessionChange: (profession: string) => void;
   onEmailChange: (email: string) => void;
   onAvatarBackgroundChange: (background: string) => void;
   onTechnologiesChange: (technologies: string[]) => void;
+  onAvatarChange: (avatar: string) => void;
 }
 
 export default function SideBar({
@@ -14,16 +14,24 @@ export default function SideBar({
   onEmailChange,
   onAvatarBackgroundChange,
   onTechnologiesChange,
+  onAvatarChange,
+
 }: SideBarProps) {
+
   const [nameInputValue, setNameInputValue] = useState("");
   const [emailInputValue, setEmailInputValue] = useState("");
   const [selectedBackground, setSelectedBackground] = useState("black");
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
+  const [avatar, setSelectedAvatar] = useState("/blackmen.png");
 
   const handleBackgroundChange = (bg: string) => {
     setSelectedBackground(bg);
   };
-
+  const handleAvatarChange = (avatar: string) => {
+    setSelectedAvatar(avatar);
+    onAvatarChange(avatar); // Chama a função para atualizar o avatar no componente pai
+  };
+  
   const handleTechnologySelect = (technology: string) => {
     setSelectedTechnologies((prevTechnologies) => [...prevTechnologies, technology]);
   };
@@ -81,17 +89,18 @@ export default function SideBar({
       <div>
         <h2>Avatar:</h2>
         <div className="flex gap-2 items-center">
-          <button>
+          <button onClick={() => handleAvatarChange("/blackmen.png")}>
             <img src="/blackmen.png" alt="" className="w-12" />
           </button>
-          <button>
+          <button onClick={() => handleAvatarChange("/whitemen.png")}>
             <img src="/whitemen.png" alt="" className="w-16" />
           </button>
-          <button>
+          <button onClick={() => handleAvatarChange("/girlprofile.png")}>
             <img src="/girlprofile.png" alt="" className="w-16" />
           </button>
         </div>
       </div>
+
       <div className="flex flex-col justify-center gap-2">
         <h2>Background:</h2>
         <div className="flex flex-wrap gap-4 h-10">
@@ -177,14 +186,14 @@ export default function SideBar({
       </div>
 
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg
-        w-[18vw]"
+        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg w-[18vw]"
         onClick={() => {
           // Quando o usuário clicar em "Salvar", chama as funções para atualizar o estado
           onNameChange(nameInputValue);
           onEmailChange(emailInputValue);
           onAvatarBackgroundChange(selectedBackground);
           onTechnologiesChange(selectedTechnologies);
+          onAvatarChange(avatar); // Adicione esta linha para atualizar o avatar selecionado
         }}
       >
         Salvar

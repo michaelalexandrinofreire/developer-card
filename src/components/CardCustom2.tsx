@@ -6,12 +6,15 @@ interface CardProps {
   email: string;
   background: string;
   technologies: string[];
+  avatar: string;
 }
 
-export default function CardCustom2({ name, email, background, technologies }: CardProps) {
+export default function CardCustom2({ name, email, background, technologies,avatar, }: CardProps) {
   return (
     <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
-      <img src="/blackmen.png" alt="" className="w-44" />
+      <div className="w-44">
+        {avatar}
+      </div>
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex flex-col justify-around items-center h-52">
         <div className="flex justify-around w-full">
           <div className="flex flex-col">
@@ -38,4 +41,5 @@ export default function CardCustom2({ name, email, background, technologies }: C
     </div>
   );
 }
+
 
