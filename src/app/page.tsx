@@ -22,8 +22,9 @@ export default function Home() {
         </ul>
       </nav>
       <a 
-      href=""
-      className="rounded-3xl flex justify-center items-center">
+      href="https://michaelfreire.vercel.app/"
+      className="rounded-3xl flex justify-center items-center"
+      target="blank">
         <img 
         src="/logomf.png" 
         alt="" 
@@ -31,7 +32,7 @@ export default function Home() {
       </a>
       <a href="/card"
       className="absolute top-1/2 right-1/2 flex justify-center items-center 
-      bg-white text-pink rounded-xl py-2 px-4 font-medium">
+      bg-white text-pink1 rounded-xl py-2 px-4 font-medium">
         <button className="/card">
           Gerar meu Card
         </button>
