@@ -13,7 +13,10 @@ export default function CardCustom({ name, email, background,avatar,}: CardProps
   return (
     <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
       <div className="w-44">
-        {avatar}
+        <img 
+        src={`${avatar}`} 
+        alt="" 
+        className="w-44"/>
       </div>
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
         <div className="flex flex-col">

@@ -108,56 +108,56 @@ export default function SideBar({
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "[#1E1F26]" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-[#1E1F26]" }}
+            style={{ background: "#1E1F26" }}
             onClick={() => handleBackgroundChange("[#1E1F26]")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "blue1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-blue1" }}
+            style={{ background: "#62B8FD" }}
             onClick={() => handleBackgroundChange("blue1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "green1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-green1" }}
+            style={{ background: "#B2E9AA" }}
             onClick={() => handleBackgroundChange("green1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "yellow1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[30px] hover:h-[30px] transition-all duration-500`}
-            style={{ background: "bg-yellow1" }}
+            style={{ background: "#FBE77D" }}
             onClick={() => handleBackgroundChange("yellow1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "orange1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[30px] hover:h-[30px] transition-all duration-500`}
-            style={{ background: "bg-orange1" }}
+            style={{ background: "#FCB775" }}
             onClick={() => handleBackgroundChange("orange1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "red1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-red1" }}
+            style={{ background: "#FA817C" }}
             onClick={() => handleBackgroundChange("red1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "pink1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-pink1" }}
+            style={{ background: "#E7AAE9" }}
             onClick={() => handleBackgroundChange("pink1")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border ${
               selectedBackground === "purple1" ? "border-blue-700" : "border-zinc-300"
             } hover:w-[31px] hover:h-[31px] transition-all duration-500`}
-            style={{ background: "bg-purple1" }}
+            style={{ background: "#B2AAE9" }}
             onClick={() => handleBackgroundChange("purple1")}
           ></button>
         </div>
