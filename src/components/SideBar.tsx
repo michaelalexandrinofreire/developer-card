@@ -64,9 +64,10 @@ export default function SideBar({
     "UI/UX",
   ];
   return (
-    <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around gap-5 text-xs font-medium bg-white overflow-auto">
+    <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around 
+    gap-5 text-xs font-medium bg-white overflow-y-scroll h-screen pt-20">
       <div className="h-12 flex flex-col justify-center gap-2">
-        <h2 className="mt-1">Nome:</h2>
+        <h2 className="">Nome:</h2>
         <div className="flex items-center">
           <input
             type="text"
@@ -89,7 +90,7 @@ export default function SideBar({
       </div>
       <div>
         <h2>Avatar:</h2>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center mt-3">
           <button onClick={() => handleAvatarChange("/blackmen.png")}>
             <img src="/blackmenprofile.png" alt="" className="w-16" />
           </button>
@@ -102,7 +103,7 @@ export default function SideBar({
         </div>
       </div>
 
-      <div className="flex flex-col justify-center gap-2">
+      <div className="flex flex-col justify-center gap-2 mb-8">
         <h2>Background:</h2>
         <div className="flex flex-wrap gap-4 h-10 text-black">
           <button

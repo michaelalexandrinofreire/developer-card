@@ -19,9 +19,9 @@ export default function CardPage() {
   };
 
   return (
-    <div className="flex flex-col max-h-screen text-black bg- ">
+    <div className="flex flex-col h-screen text-black bg-blue-300 ">
       <div className="w-screen flex justify-around items-center bg-white border-b border-gray-300
-      py-1">
+      py-1 fixed">
         <a
         href="/"
         className="flex justify-center items-center gap-2">
