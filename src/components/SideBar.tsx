@@ -61,6 +61,7 @@ export default function SideBar({
     "Swift",
     "Tailwind",
     "TypeScript",
+    "UI/UX",
   ];
   return (
     <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around gap-5 text-xs font-medium bg-white min-h-screen overflow-auto">
@@ -103,12 +104,12 @@ export default function SideBar({
 
       <div className="flex flex-col justify-center gap-2">
         <h2>Background:</h2>
-        <div className="flex flex-wrap gap-4 h-10">
+        <div className="flex flex-wrap gap-4 h-10 text-black">
           <button
-            className={`rounded-full w-7 h-7 border bg-black ${
-              selectedBackground === "black" ? "border-blue-700" : "border-zinc-300"
+            className={`rounded-full w-7 h-7 border bg-zinc-900 ${
+              selectedBackground === "zinc-900" ? "border-blue-700" : "border-zinc-300"
             } `}
-            onClick={() => handleBackgroundChange("black")}
+            onClick={() => handleBackgroundChange("zinc-900")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border bg-blue1 ${

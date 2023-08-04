@@ -21,7 +21,7 @@ export default function CardCustom({ name, email, background,avatar,}: CardProps
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
         <div className="flex flex-col">
           <div className="text-xl font-bold">{name}</div>
-          <div className="text-xs font-light">{email}</div>
+          <div className="text-[11px] font-normal">{email}</div>
         </div>
         <div className="">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
