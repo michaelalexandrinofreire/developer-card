@@ -64,7 +64,7 @@ export default function SideBar({
     "UI/UX",
   ];
   return (
-    <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around gap-5 text-xs font-medium bg-white min-h-screen overflow-auto">
+    <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around gap-5 text-xs font-medium bg-white overflow-auto">
       <div className="h-12 flex flex-col justify-center gap-2">
         <h2 className="mt-1">Nome:</h2>
         <div className="flex items-center">
@@ -186,7 +186,7 @@ export default function SideBar({
           onEmailChange(emailInputValue);
           onAvatarBackgroundChange(selectedBackground);
           onTechnologiesChange(selectedTechnologies);
-          onAvatarChange(avatar); // Adicione esta linha para atualizar o avatar selecionado
+          onAvatarChange(avatar);
         }}
       >
         Salvar
