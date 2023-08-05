@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import CardCustom from "@/components/CardCustom";
 import SideBar from "@/components/SideBar";
 import CardCustom2 from "@/components/CardCustom2";
@@ -18,6 +18,8 @@ export default function CardPage() {
     setSelectedAvatar(avatar);
   };
 
+  
+  
   return (
     <div className="flex flex-col h-screen text-black bg-blue-300 ">
       <div className="w-screen flex justify-around items-center bg-white border-b border-gray-300
@@ -30,9 +32,10 @@ export default function CardPage() {
           <span className="text-sm text-blue-700 font-bold">CardProfile</span>
         </a>
         <button className="flex justify-center items-center bg-cyan-950 text-white gap-2
-        py-2 px-3 rounded-xl">
+        py-2 px-3 rounded-xl"
+        >
           <HiDownload color="white" size={12}/>
-          <span className="text-xs font-semibold">Baixar imagem</span>
+          <span className="text-xs font-semibold">Baixar Card</span>
         </button>
       </div>
       <div className="flex justify-between items-center">
@@ -45,20 +48,25 @@ export default function CardPage() {
             onAvatarChange={handleAvatarChange} //
           />
         </div>
-          <div className="flex justify-center items-center flex-1 gap-3 text-xs font-medium">
+          <div className="flex justify-center items-center flex-1 gap-3 text-xs font-medium"
+          > 
+          <div
+          >
             <CardCustom
               name={name}
               email={email}
               background={avatarBackground}
               technologies={selectedTechnologies}
-              avatar={selectedAvatar} // Passe o avatar selecionado
+              avatar={selectedAvatar}
             />
+          </div>
+
             <CardCustom2
               name={name}
               email={email}
               background={avatarBackground}
               technologies={selectedTechnologies}
-              avatar={selectedAvatar} // Passe o avatar selecionado
+              avatar={selectedAvatar}
             />
           </div>
       </div>

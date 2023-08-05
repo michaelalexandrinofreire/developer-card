@@ -51,21 +51,19 @@ export default function SideBar({
     "Git",
     "HTML",
     "JavaScript",
-    "Laravel",
     "SQL",
     "Node.js",
     "PHP",
     "Python",
     "React",
     "Ruby",
-    "Swift",
     "Tailwind",
     "TypeScript",
     "UI/UX",
   ];
   return (
     <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col justify-around 
-    gap-5 text-xs font-medium bg-white overflow-y-scroll h-screen pt-20">
+    gap-5 text-xs font-medium bg-white overflow-hidden h-screen pt-16">
       <div className="h-12 flex flex-col justify-center gap-2">
         <h2 className="">Nome:</h2>
         <div className="flex items-center">
@@ -105,7 +103,7 @@ export default function SideBar({
 
       <div className="flex flex-col justify-center gap-2 mb-8">
         <h2>Background:</h2>
-        <div className="flex flex-wrap gap-4 h-10 text-black">
+        <div className="flex flex-wrap gap-4 h-10 w-[18vw] text-black">
           <button
             className={`rounded-full w-7 h-7 border bg-zinc-900 ${
               selectedBackground === "zinc-900" ? "border-blue-700" : "border-zinc-300"
@@ -180,7 +178,8 @@ export default function SideBar({
       </div>
 
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg w-[18vw]"
+        className="bg-blue-500 hover:bg-blue-600 text-white 
+        px-3 py-2 rounded-lg w-[18vw] -mt-3"
         onClick={() => {
           // Quando o usuário clicar em "Salvar", chama as funções para atualizar o estado
           onNameChange(nameInputValue);
