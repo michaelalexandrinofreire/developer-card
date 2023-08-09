@@ -10,13 +10,23 @@ interface CardProps {
   technologies: string[];
 }
 
-export interface starprops{
-  size: String;
+export interface StarProps {
+  size: 'small' | 'medium' | 'large';
+  position: String;
 }
-export function Star(){
+
+export function Star({size, position}: StarProps){
+  let sizeSvg = 16;
+  if(size === 'small'){
+    sizeSvg = 7;
+  }else if(size === 'medium'){
+    sizeSvg = 14;
+  } else if(size === 'large'){
+    sizeSvg = 16;
+  }
   return(
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 59 58" fill="none">
+    <div className={`absolute ${position}`}>
+      <svg xmlns="http://www.w3.org/2000/svg" width={sizeSvg} height={sizeSvg} viewBox="0 0 59 58" fill="none">
         <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
       </svg>
     </div>
@@ -31,16 +41,7 @@ export default function CardCustom({ name, email, background,avatar,}: CardProps
         alt="" 
         className="max-h-fit rounded-3xl"/>
       </div>
-      <div className="absolute top-3 left-4 text-gray-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 59 58" fill="none">
-          <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
-        </svg>
-      </div>
-      <div className="absolute top-1/2 left-16 text-gray-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 59 58" fill="none">
-          <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
-        </svg>
-      </div>
+
 
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
         <div className="flex flex-col">
