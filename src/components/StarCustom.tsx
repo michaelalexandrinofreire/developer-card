@@ -3,7 +3,7 @@ export interface StarProps {
   position: String;
 }
 
-export default function Star({size, position}: StarProps){
+export default function StarCustom({size, position}: StarProps){
   let sizeSvg = 16;
   if(size === 'xs'){
     sizeSvg = 7;

@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import StarCustom from "./starCustom";
 
 interface CardProps {
   name: string;
@@ -18,6 +19,30 @@ export default function CardCustom2({ name, email, background, technologies,avat
         alt="" 
         className="max-h-fit rounded-3xl"/>
       </div>
+      <StarCustom
+      position={'top-4 left-6'}
+      size="lg"
+      />
+      <StarCustom
+      position={'top-24 left-20'}
+      size="base"
+      />
+      <StarCustom
+      position={'top-32 right-28'}
+      size="sm"
+      />
+      <StarCustom
+      position={'top-9 right-12'}
+      size="xs"
+      />
+      <StarCustom
+      position={'top-1/2 left-12'}
+      size="xs"
+      />
+      <StarCustom
+      position={'top-28 right-0.5'}
+      size="base"
+      />
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex flex-col justify-around items-center h-52">
         <div className="flex justify-around w-full">
           <div className="flex flex-col">
