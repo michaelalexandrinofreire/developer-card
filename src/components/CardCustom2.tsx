@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import StarCustom from "./starCustom";
+import StarCustom from "./StarCustom";
 
 interface CardProps {
   name: string;
@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function CardCustom2({ name, email, background, technologies,avatar, }: CardProps) {
   return (
-    <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
+    <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[262px] rounded-[20px] flex justify-center items-end relative`}>
       <div className="max-w-fit ">
         <img 
         src={`${avatar}`} 

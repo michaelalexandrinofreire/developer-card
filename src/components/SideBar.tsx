@@ -62,8 +62,8 @@ export default function SideBar({
     "UI/UX",
   ];
   return (
-    <div className="w-[22vw] text-zinc-700 pl-[10%] flex flex-col
-    gap-5 text-xs font-medium bg-white overflow-hidden h-screen pt-16">
+    <div className="w-[22vw] text-white pl-[10%] flex flex-col
+    gap-5 text-xs font-medium bg-[#484A55] overflow-hidden h-screen pt-16">
       <div className="h-12 flex flex-col justify-center gap-2">
         <h2 className="">Nome:</h2>
         <div className="flex items-center">

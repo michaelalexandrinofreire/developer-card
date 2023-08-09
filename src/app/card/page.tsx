@@ -18,8 +18,8 @@ export default function CardPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen text-black bg-[url(/bg.png)] bg-repeat">
-      <div className="w-screen flex justify-between px-10 items-center bg-white border-b border-gray-100
+    <div className="flex flex-col h-screen text-black bg-[#BEC1D5] bg-repeat">
+      <div className="w-screen flex justify-between px-10 items-center bg-[#484A55] border-b border-gray-500
       py-1 fixed">
         <a
         href="/"
@@ -48,9 +48,8 @@ export default function CardPage() {
               name={name}
               email={email}
               background={avatarBackground}
-              technologies={selectedTechnologies}
-              avatar={selectedAvatar}
-            />
+              avatar={selectedAvatar}         
+              />
           </div>
 
             <CardCustom2

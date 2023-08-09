@@ -1,19 +1,19 @@
 'use client'
 
 import React from "react";
-import StarCustom from "./starCustom";
+import StarCustom from './StarCustom';
 
 interface CardProps {
   name: string;
   email: string;
   background: string;
   avatar: string;
-  technologies: string[];
 }
 
-export default function CardCustom({ name, email, background,avatar,}: CardProps) {
+export default function CardCustom({name, email, background,avatar,}: CardProps) {
+
   return (
-    <div className={`bg-${background === "#1E1F26" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
+    <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[262px] rounded-[20px] flex items-end relative`}>
       <div className="max-w-fit ">
         <img 
         src={`${avatar}`} 
@@ -44,7 +44,7 @@ export default function CardCustom({ name, email, background,avatar,}: CardProps
       position={'top-28 right-0.5'}
       size="base"
       />
-      <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
+      <div className="bg-white/10 backdrop-blur-2xl absolute bottom-0 text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
         <div className="flex flex-col">
           <div className="text-xl font-bold">{name}</div>
           <div className="text-[11px] font-normal">{email}</div>
