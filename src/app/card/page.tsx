@@ -18,21 +18,20 @@ export default function CardPage() {
     setSelectedAvatar(avatar);
   };
 
-  
-  
   return (
-    <div className="flex flex-col h-screen text-black bg-blue-300 ">
-      <div className="w-screen flex justify-around items-center bg-white border-b border-gray-300
+    <div className="flex flex-col h-screen text-black bg-[url(/bg.png)] bg-repeat">
+      <div className="w-screen flex justify-between px-10 items-center bg-white border-b border-gray-300
       py-1 fixed">
         <a
         href="/"
+        
         className="flex justify-center items-center gap-2">
-          <img src="/logomf.png" alt="" 
+          <img src="/logomf.png" alt="go to home" 
           className="w-12"/>
           <span className="text-sm text-blue-700 font-bold">CardProfile</span>
         </a>
         <button className="flex justify-center items-center bg-cyan-950 text-white gap-2
-        py-2 px-3 rounded-xl"
+        py-2 px-3 rounded-2xl"
         >
           <HiDownload color="white" size={12}/>
           <span className="text-xs font-semibold">Baixar Card</span>

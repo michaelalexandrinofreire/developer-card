@@ -37,7 +37,9 @@ export default function Home() {
           Gerar meu Card
         </button>
       </a>
-
+      <div>
+        
+      </div>
     </main>
   );
 }
