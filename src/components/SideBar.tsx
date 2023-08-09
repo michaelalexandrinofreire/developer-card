@@ -20,7 +20,7 @@ export default function SideBar({
 
   const [nameInputValue, setNameInputValue] = useState("");
   const [emailInputValue, setEmailInputValue] = useState("");
-  const [selectedBackground, setSelectedBackground] = useState("black");
+  const [selectedBackground, setSelectedBackground] = useState("#1E1F26");
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
   const [avatar, setSelectedAvatar] = useState("/blackmen.png");
 
@@ -62,7 +62,7 @@ export default function SideBar({
     "UI/UX",
   ];
   return (
-    <div className="w-[23vw] text-zinc-700 pl-[10%] flex flex-col
+    <div className="w-[22vw] text-zinc-700 pl-[10%] flex flex-col
     gap-5 text-xs font-medium bg-white overflow-hidden h-screen pt-16">
       <div className="h-12 flex flex-col justify-center gap-2">
         <h2 className="">Nome:</h2>
@@ -105,10 +105,10 @@ export default function SideBar({
         <h2>Background:</h2>
         <div className="flex flex-wrap gap-4 h-10 w-[18vw] text-black">
           <button
-            className={`rounded-full w-7 h-7 border bg-zinc-900 ${
-              selectedBackground === "zinc-900" ? "border-blue-700" : "border-zinc-300"
+            className={`rounded-full w-7 h-7 border bg-[#1E1F26] ${
+              selectedBackground === "[#1E1F26]" ? "border-blue-700" : "border-zinc-300"
             } `}
-            onClick={() => handleBackgroundChange("zinc-900")}
+            onClick={() => handleBackgroundChange("[#1E1F26]")}
           ></button>
           <button
             className={`rounded-full w-7 h-7 border bg-blue1 ${
@@ -154,9 +154,9 @@ export default function SideBar({
           ></button>
         </div>
       </div>
-      <div className=" flex flex-col justify-center gap-2">
+      <div className=" flex flex-col justify-center gap-2 w-full">
         <h2>Tecnologias:</h2>
-        <div className="flex flex-wrap items-center gap-2 w-[20vw] text-xs">
+        <div className="flex flex-wrap items-center gap-2 w-[19vw] text-xs">
           {availableTechnologies.map((tech) => (
             <button
               key={tech}

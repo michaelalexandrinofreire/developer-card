@@ -4,7 +4,6 @@ import React, { useRef, useState } from "react";
 import CardCustom from "@/components/CardCustom";
 import SideBar from "@/components/SideBar";
 import CardCustom2 from "@/components/CardCustom2";
-import { HiDownload } from 'react-icons/hi';
 
 export default function CardPage() {
   const [name, setName] = useState("");
@@ -20,7 +19,7 @@ export default function CardPage() {
 
   return (
     <div className="flex flex-col h-screen text-black bg-[url(/bg.png)] bg-repeat">
-      <div className="w-screen flex justify-between px-10 items-center bg-white border-b border-gray-300
+      <div className="w-screen flex justify-between px-10 items-center bg-white border-b border-gray-100
       py-1 fixed">
         <a
         href="/"
@@ -28,14 +27,8 @@ export default function CardPage() {
         className="flex justify-center items-center gap-2">
           <img src="/logomf.png" alt="go to home" 
           className="w-12"/>
-          <span className="text-sm text-blue-700 font-bold">CardProfile</span>
+          <span className="text-sm text-blue-700 font-bold">Dev Card</span>
         </a>
-        <button className="flex justify-center items-center bg-cyan-950 text-white gap-2
-        py-2 px-3 rounded-2xl"
-        >
-          <HiDownload color="white" size={12}/>
-          <span className="text-xs font-semibold">Baixar Card</span>
-        </button>
       </div>
       <div className="flex justify-between items-center">
         <div>

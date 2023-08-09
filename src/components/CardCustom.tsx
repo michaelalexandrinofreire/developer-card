@@ -10,15 +10,38 @@ interface CardProps {
   technologies: string[];
 }
 
+export interface starprops{
+  size: String;
+}
+export function Star(){
+  return(
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 59 58" fill="none">
+        <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
+      </svg>
+    </div>
+  )
+}
 export default function CardCustom({ name, email, background,avatar,}: CardProps) {
   return (
-    <div className={`bg-${background === "black" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
+    <div className={`bg-${background === "#1E1F26" ? "#1E1F26" : background} w-[339px] h-[272px] rounded-[20px] flex justify-center items-end relative`}>
       <div className="max-w-fit ">
         <img 
         src={`${avatar}`} 
         alt="" 
         className="max-h-fit rounded-3xl"/>
       </div>
+      <div className="absolute top-3 left-4 text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 59 58" fill="none">
+          <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
+        </svg>
+      </div>
+      <div className="absolute top-1/2 left-16 text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 59 58" fill="none">
+          <path d="M29.6808 0L37.4452 20.9829L58.4281 28.7473L37.4452 36.5116L29.6808 57.4945L21.9165 36.5116L0.933594 28.7473L21.9165 20.9829L29.6808 0Z" fill="white" fill-opacity="0.12"/>
+        </svg>
+      </div>
+
       <div className="bg-white/10 backdrop-blur-2xl absolute text-white w-full rounded-[20px] px-8 py-5 flex justify-around items-center">
         <div className="flex flex-col">
           <div className="text-xl font-bold">{name}</div>
