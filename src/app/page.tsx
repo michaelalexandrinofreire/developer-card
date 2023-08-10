@@ -1,6 +1,7 @@
 'use client'
 import CardCustom from "@/app/card/components/CardCustom";
 import StarCustom from "@/app/card/components/StarCustom";
+import { motion } from "framer-motion";
 
 export default function Home() {
 
@@ -17,31 +18,43 @@ export default function Home() {
       <StarCustom size={"lg"} 
       position={'bottom-36 left-64'}/>
       <div className="font-poppins flex relative justify-center items-center">
-        <div className="z-50">
+        <motion.div
+        className="z-50"
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: [0, -10, 0], opacity: 1 }}
+        transition={{ duration: 1.5, delay: 1.5, }}
+      >
         <CardCustom 
-            name={"Marvin McKinney"}
-            email={"marbin@gmail.com"}
-            background={"[#1E1F26]"}
-            avatar={"girl.png"} />
-        </div>
+          name={"Marvin McKinney"}
+          email={"marbin@gmail.com"}
+          background={"[#1E1F26]"}
+          avatar={"girl.png"} 
+        />
+      </motion.div>
 
-        <div className="absolute left-72 z-0">
+        <motion.div className="absolute left-72 z-0"
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: [0, -10, 0], opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.5, }}>
           <CardCustom 
             name={"Jacob Jones"}
             email={"jacob@gmail.com"}
             background={"orange1"}
             avatar={"whitemen.png"}             
             />
-        </div>
+        </motion.div>
 
-        <div className="absolute right-72 z-0">
+        <motion.div className="absolute right-72 z-0"
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: [0, -10, 0], opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.5, }}>
           <CardCustom 
             name={"John doe"}
             email={"johndoe@gmail.com"}
             background={"red1"}
             avatar={"blackmen.png"}             
             />
-        </div>
+        </motion.div>
       </div>
       <div className="flex justify-between items-center gap-6">
         <div className="flex flex-col group">
@@ -50,7 +63,7 @@ export default function Home() {
             gerar card
           </a>   
           <span
-            className="h-0.5 bg-slate-100 group-hover:w-full w-0 transition-all duration-500" 
+            className="h-0.5 bg-slate-100 group-hover:w-full w-0 transition-all duration-500 rounded" 
           ></span>     
         </div>
 
@@ -69,7 +82,7 @@ export default function Home() {
             Repos Card
           </a>
           <span
-            className="h-0.5 bg-slate-100 group-hover:w-full w-0 transition-all duration-500" 
+            className="h-0.5 bg-slate-100 group-hover:w-full w-0 transition-all duration-500 rounded" 
           ></span>
         </div>
       </div>
