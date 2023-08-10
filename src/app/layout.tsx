@@ -1,5 +1,4 @@
 import './globals.css'
-import Footer from '@/components/Footer'
 
 export default function RootLayout({
   children,
@@ -9,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" title='Card Github'/>
+        <link rel="icon" href="/favicon.ico" sizes="any" title='Developer Card'/>
         <link href="/dist/output.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>

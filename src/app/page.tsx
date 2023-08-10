@@ -1,6 +1,6 @@
 'use client'
-import CardCustom from "@/components/CardCustom";
-import StarCustom from "@/components/StarCustom";
+import CardCustom from "@/app/card/components/CardCustom";
+import StarCustom from "@/app/card/components/StarCustom";
 
 export default function Home() {
 

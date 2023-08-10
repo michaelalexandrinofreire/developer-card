@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useRef, useState } from "react";
-import CardCustom from "@/components/CardCustom";
-import SideBar from "@/components/SideBar";
-import CardCustom2 from "@/components/CardCustom2";
+import CardCustom from "@/app/card/components/CardCustom";
+import SideBar from "@/app/card/components/SideBar";
+import CardCustom2 from "@/app/card/components/CardCustom2";
 
 export default function CardPage() {
   const [name, setName] = useState("");
