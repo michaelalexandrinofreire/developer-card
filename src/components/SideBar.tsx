@@ -50,6 +50,7 @@ export default function SideBar({
     "Docker",
     "Git",
     "HTML",
+    "Java",
     "JavaScript",
     "SQL",
     "Node.js",
@@ -57,19 +58,20 @@ export default function SideBar({
     "Python",
     "React",
     "Ruby",
+    "Sass",
     "Tailwind",
     "TypeScript",
     "UI/UX",
   ];
   return (
-    <div className="w-[22vw] text-white pl-[10%] flex flex-col
+    <div className="w-[22vw] text-white pl-[10%] flex flex-col border-r border-r-gray-500
     gap-5 text-xs font-medium bg-[#484A55] overflow-hidden h-screen pt-16">
       <div className="h-12 flex flex-col justify-center gap-2">
         <h2 className="">Nome:</h2>
         <div className="flex items-center">
           <input
             type="text"
-            className="rounded-xl bg-zinc-200 pl-2 py-0.5 border focus:border-blue-700 focus:outline-none focus:ring-blue-600 focus:bg-white w-[15vw]"
+            className="rounded-xl bg-zinc-200 pl-2 py-0.5 border focus:border-blue-700 focus:outline-none focus:ring-blue-600 focus:bg-white text-black w-[15vw]"
             value={nameInputValue}
             onChange={(e) => setNameInputValue(e.target.value)}
           />
@@ -80,7 +82,7 @@ export default function SideBar({
         <div className="flex items-center">
           <input
             type="text"
-            className="rounded-xl bg-zinc-200 pl-2 py-0.5 border focus:border-blue-700 focus:outline-none focus:ring-blue-600 focus:bg-white w-[15vw]"
+            className="rounded-xl bg-zinc-200 pl-2 py-0.5 border focus:border-blue-700 focus:outline-none focus:ring-blue-600 text-black focus:bg-white w-[15vw]"
             value={emailInputValue}
             onChange={(e) => setEmailInputValue(e.target.value)}
           />
@@ -161,7 +163,7 @@ export default function SideBar({
             <button
               key={tech}
               className={`${
-                selectedTechnologies.includes(tech) ? "bg-blue-500" : "bg-blue-200"
+                selectedTechnologies.includes(tech) ? "bg-blue-600" : "bg-blue-400"
               } text-white font-medium text-xs px-2 py-1 rounded-lg`}
               onClick={() => {
                 if (selectedTechnologies.includes(tech)) {

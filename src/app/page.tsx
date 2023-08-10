@@ -62,7 +62,10 @@ export default function Home() {
           className="w-14"/>
         </a>
         <div className="flex flex-col group">
-          <a href="https://github.com/michaelalexandrinofreire/developer-card" className="text-[22px]">
+          <a 
+          href="https://github.com/michaelalexandrinofreire/developer-card" 
+          className="text-[22px]"
+          target="blank">
             Repos Card
           </a>
           <span

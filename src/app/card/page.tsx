@@ -18,16 +18,15 @@ export default function CardPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen text-black bg-[#BEC1D5] bg-repeat">
+    <div className="flex flex-col h-screen text-black bg-[#484A55]">
       <div className="w-screen flex justify-between px-10 items-center bg-[#484A55] border-b border-gray-500
       py-1 fixed">
         <a
         href="/"
-        
         className="flex justify-center items-center gap-2">
-          <img src="/logomf.png" alt="go to home" 
-          className="w-12"/>
-          <span className="text-sm text-blue-700 font-bold">Dev Card</span>
+          <img src="/fav.png" alt="go to home" 
+          className="w-10 rounded-xl"/>
+          <span className="text-base text-blue-300 font-bold">Developer Card</span>
         </a>
       </div>
       <div className="flex justify-between items-center">
