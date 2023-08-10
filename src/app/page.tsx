@@ -68,6 +68,7 @@ export default function Home() {
         </div>
 
         <a href="https://michaelfreire.vercel.app/"
+        target="blank"
         className="bg-purple1 rounded-2xl hover:bg-purple1/60 transition-all duration-300 px-4">
           <img 
           src="/logomf.png" 
